@@ -1,0 +1,650 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    padding-bottom: 100px;
+}
+
+.top-section,
+.slogan,
+.reviews__stars,
+.info_advantages_list ul li,
+.info_advantages_list_listmark,
+.info_image,
+.info_image_container,
+.info_recommendations_experts_photo,
+.expert_review_stars,
+.usefull_links,
+.usefull_links_buy_button button,
+.bottom_section,
+.bottom_section_reviews_stars,
+.autoplay-progress,
+.current_video_container,
+.theme_video_container,
+.video_author_review_stars,
+.info_recommendations_experts {
+    display: flex;
+    align-items: center;
+}
+
+.slogan_reviews,
+.info_advantages_list_listmark,
+.info_image_container,
+.info_recommendations_experts_photo,
+.autoplay-progress,
+.theme_video_container,
+.current_video_container {
+    display: flex;
+    justify-content: center;
+}
+
+.top-section,
+.slogan,
+.info_advantages,
+.info_image {
+    display: flex;
+    flex-direction: column;
+}
+
+.reviews__stars,
+.bottom_section_reviews_stars {
+    gap: 4px;
+}
+
+.focus_video_container,
+.focused_video_container,
+.unfocused_video_container,
+.unfocused_video_container,
+.theme_video_container {
+    position: absolute;
+    inset: 0;
+}
+
+.info_image_container p,
+.info_recommendations_experts_photo_circle,
+.autoplay-progress,
+.autoplay-progress svg,
+.current_video_container video,
+.video_controls {
+    position: absolute;
+}
+
+.info_recommendations_experts_photo,
+.video_wrapper,
+.current_video_container {
+    position: relative;
+}
+
+.info_image_container,
+.info_image_container img,
+.autoplay-progress svg,
+.video_wrapper,
+.current_video_container,
+.video_author_photo img {
+    width: 100%;
+    height: 100%;
+}
+
+.info_recommendations_title>p:first-child,
+.review_content,
+.review_content span,
+.info_advantages_description_mobile,
+.video_author_prof {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.reviews__text,
+.review_title,
+.info_advantages_list ul li,
+.usefull_links_explore_benefits_link a,
+.usefull_links_buy_button button span {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.info_advantages_description p,
+.author_name,
+.bottom_section_content,
+.video_author_name {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.slogan_text h2,
+.bottom_section_title {
+    font-size: 48px;
+    line-height: 60px;
+}
+
+.info_advantages_description p,
+.info_advantages_description_mobile,
+.bottom_section_content {
+    color: #000000B2;
+}
+
+.header h1,
+.info_image_container p,
+.usefull_links_buy_button button span {
+    color: white;
+}
+
+.info_recommendations_title>p:last-child,
+.video_container:hover {
+    color: #009EFE
+}
+
+.font-normal {
+    font-weight: 500;
+}
+
+.font-thin {
+    font-weight: 400;
+}
+
+.header {
+    padding: 21px 13.5px;
+    background-color: #009EFE;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-bottom: 29px;
+}
+
+.header h1 {
+    font-size: 20px;
+    line-height: 23px;
+}
+
+.top-section {
+    background: linear-gradient(0deg, rgba(228, 240, 255, 0) 0%, #E4F0FF 48.5%);
+    margin-bottom: 100px;
+    padding: 0 8.3%;
+}
+
+.slogan {
+    margin-bottom: 60px;
+}
+
+.slogan_text {
+    margin-bottom: 15px;
+}
+
+.slogan_reviews {
+    gap: 13px;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8%;
+    margin-bottom: 32px;
+}
+
+.info_advantages {
+    padding-top: 30px;
+    padding-bottom: 13px;
+    min-width: 360px;
+}
+
+.info_advantages_list {
+    margin-bottom: 45px;
+}
+
+.info_advantages_list ul {
+    list-style: none;
+}
+
+.info_advantages_list ul li {
+    gap: 10px;
+}
+
+.info_advantages_list ul li:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.info_advantages_list_listmark {
+    width: 32px;
+    height: 32px;
+}
+
+.info_advantages_description p {
+    font-family: "DM Sans", sans-serif;
+}
+
+.info_image_container {
+    margin-bottom: 7px;
+}
+
+.info_image_container p {
+    font-size: 30px;
+    line-height: 35.22px;
+    white-space: nowrap;
+}
+
+.info_image_shadow {
+    width: 100%;
+    height: 20px;
+    background: radial-gradient(50.14% 40.12% at 49.99% 49.83%, #2A2C2E 0%, #656668 22.23%, #A6A7A8 49.55%, #D6D7D7 72.56%, #F4F4F4 90.07%, #FFFFFF 100%);
+    opacity: 0.2;
+}
+
+.info_recommendations {
+    padding-top: 30px;
+    padding-bottom: 13px;
+    width: 348px;
+}
+
+.info_recommendations_title {
+    margin-bottom: 24px;
+}
+
+.info_recommendations_title>p:first-child {
+    margin-bottom: 5px;
+}
+
+.info_recommendations_title>p:last-child {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.info_recommendations_experts {
+    gap: 5px;
+    margin-bottom: 14px;
+}
+
+.info_recommendations_experts_photo {
+    cursor: pointer;
+    width: 83px;
+    height: 83px;
+    border-radius: 100%;
+}
+
+.info_recommendations_experts_photo img {
+    width: 73.5px;
+    height: 73.5px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.info_recommendations_experts_photo_circle {
+    width: 83px;
+    height: 83px;
+    border: 1px solid #009EFE33;
+    border-radius: 100%;
+}
+
+.expert_review {
+    min-width: 348px;
+    background: #FFFFFFCC;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.expert_review_author {
+    margin-bottom: 24px;
+}
+
+.expert_review_author small {
+    font-size: 12px;
+    line-height: 18px;
+    color: #00000080;
+}
+
+.expert_review_stars {
+    gap: 3px;
+    margin-bottom: 12px;
+}
+
+.expert_review_stars img {
+    width: 18px;
+    height: 18px;
+}
+
+.review_title {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.review_content {
+    color: #00000080;
+}
+
+.review_content span {
+    font-style: italic;
+    font-weight: 700;
+}
+
+.info_advantages_description_mobile {
+    display: none;
+    margin-bottom: 30px;
+}
+
+.usefull_links {
+    gap: 40px;
+}
+
+.usefull_links_buy_button button {
+    gap: 10px;
+    cursor: pointer;
+    background-color: #009EFE;
+    padding: 16px 60px;
+    border-radius: 100px;
+    border: 0px;
+}
+
+.bottom_section_rating {
+    width: 43%;
+    padding: 0 8.3%;
+}
+
+.bottom_section_reviews {
+    display: flex;
+    gap: 13px;
+    margin-bottom: 40px;
+}
+
+.bottom_section_reviews_stars img {
+    width: 24px;
+    height: 24px;
+}
+
+.bottom_section_title {
+    margin-bottom: 12px;
+}
+
+.bottom_section_videos {
+    width: 57%;
+}
+
+.autoplay-progress {
+    width: 85px;
+    height: 85px;
+    z-index: 10;
+    font-weight: bold;
+    color: var(--swiper-theme-color);
+}
+
+.autoplay-progress svg {
+    --progress: 0;
+    left: 0;
+    top: 0px;
+    z-index: 10;
+    stroke-width: 1px;
+    stroke: var(--swiper-theme-color);
+    fill: none;
+    stroke-dashoffset: calc(145.6px * (1 + var(--progress)));
+    stroke-dasharray: 145.6;
+    transform: rotate(-90deg);
+}
+
+.videosSwiper {
+    height: 451px;
+}
+
+.video_container {
+    padding: 2px;
+    border-radius: 20px;
+    height: 447px;
+    width: 264px;
+    transition: 250ms;
+    border: 2px solid transparent;
+}
+
+.theme_video_container {
+    transition: 50ms;
+}
+
+.current_video_container {
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.video_container:hover .focused_video_container {
+    opacity: 1;
+}
+
+.video_container:hover .unfocused_video_container {
+    opacity: 0;
+}
+
+.current_video_container video {
+    height: 100%;
+}
+
+.videosSwiper .swiper-slide {
+    width: fit-content;
+}
+
+.focus_video_container {
+    z-index: 10;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.focused_video_container {
+    opacity: 0;
+    background: linear-gradient(360deg, #005EB8 0%, rgba(0, 94, 184, 0) 46.09%);
+    transition: 250ms;
+}
+
+.unfocused_video_container {
+    opacity: 1;
+    background: linear-gradient(360deg, #000000 0%, rgba(0, 0, 0, 0) 46.09%);
+    transition: 250ms;
+}
+
+.video_author_container {
+    align-self: flex-end;
+    padding: 11px 14px;
+    z-index: 100;
+}
+
+.video_author {
+    display: flex;
+    align-items: start;
+}
+
+.video_author_info {
+    display: flex;
+    margin-right: 8px;
+}
+
+.video_author_photo {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    overflow: hidden;
+    margin-right: 8px;
+}
+
+.video_author_photo img {
+    object-fit: cover;
+}
+
+.video_author_prof {
+    color: #FFFFFF80;
+    white-space: nowrap;
+}
+
+.video_author_review_stars {
+    gap: 2px;
+}
+
+.video_author_review_stars img {
+    width: 14px;
+    height: 14px;
+}
+
+.video_controls {
+    z-index: 100;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1024px) {
+    .info {
+        grid-template-columns: 55% 45%;
+        gap: 0px;
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .info_advantages {
+        justify-content: center;
+    }
+
+    .info_recommendations {
+        display: none;
+    }
+
+    .bottom_section_reviews {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:768px) {
+    body {
+        padding-bottom: 75px;
+    }
+
+    .header {
+        padding: 16px 10px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+
+    .header h1 {
+        font-size: 15px;
+        line-height: 17.61px;
+    }
+
+    .top-section {
+        padding: 0 5%;
+        margin-bottom: 70px;
+    }
+
+    .slogan_text {
+        margin-bottom: 30px;
+    }
+
+    .slogan_text h2 {
+        font-size: 32px;
+        line-height: 48px;
+    }
+
+    .reviews__stars {
+        gap: 3px;
+    }
+
+    .reviews__stars img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .slogan {
+        margin-bottom: 30px;
+    }
+
+    .info_advantages_list_listmark {
+        width: 24px;
+        height: 24px;
+    }
+
+    .info_advantages_list_listmark img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .info_advantages_list {
+        margin-bottom: 0;
+    }
+
+    .info_advantages_list ul li {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .info_advantages_list ul li:not(:last-child) {
+        margin-bottom: 18px;
+    }
+
+    .info_advantages_description p {
+        display: none;
+    }
+
+    .info_advantages {
+        justify-content: center;
+        padding: 0;
+        min-width: auto;
+    }
+
+    .info_image {
+        padding-left: 10px;
+        min-width: 177px;
+        min-height: 280px;
+    }
+
+    .info_image_container {
+        margin-bottom: 4px;
+    }
+
+    .info_image_container p {
+        font-size: 20px;
+        line-height: 23.48px;
+    }
+
+    .info_advantages_description_mobile {
+        display: block;
+    }
+
+    .usefull_links {
+        gap: 24px;
+    }
+
+    .usefull_links_buy_button button {
+        gap: 10px;
+        padding: 12px 46px;
+        border-radius: 100px;
+    }
+
+    .usefull_links_explore_benefits_link a,
+    .usefull_links_buy_button button span,
+    .bottom_section_content,
+    .reviews__text {
+        font-size: 16px;
+        line-height: 24px;
+
+    }
+
+    .usefull_links_explore_benefits_link a,
+    .usefull_links_buy_button button span {
+        white-space: nowrap;
+    }
+
+    .bottom_section {
+        flex-direction: column;
+        gap: 42px;
+    }
+
+    .bottom_section_rating {
+        padding: 0 5%;
+        width: auto;
+    }
+
+    .bottom_section_title {
+        font-size: 32px;
+        line-height: 42px;
+    }
+
+    .bottom_section_videos {
+        padding-left: 5%;
+        width: 100%;
+    }
+}
